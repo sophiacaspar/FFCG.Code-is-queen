@@ -25,5 +25,13 @@ namespace FFCG.Generation.CD_CI.Tests
             string personalGreeting = _generateOutput.GetPersonalGreeting("Sophia");
             Assert.Equal("Hello Sophia!", personalGreeting);
         }
+
+        [Fact]
+        public void Should_return_personal_greeting2()
+        {
+            string personalGreeting = _generateOutput.GetPersonalGreeting("Poop");
+            Assert.Equal("Hello Sophia!", personalGreeting);
+        }
+
     }
 }
